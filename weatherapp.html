@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="container">
+      <form id="search-form"> 
+    <input  type = "text"  placeholder = "Change city..."  autocomplete = "off" autofocus="on" id="search-text-input"/>
+    <input  type = "submit"  value = "search" class="searching" id="search-city"/>
+    </form>
+    <button type=search id="current-location-button">Current location</button>
+    <div class="box">
+    <h1>Čenkovice</h1> 
+    <h2>Thursday 12:00</h2>
+    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" class="sunny" alt="sunny" width="180px"/>
+    <div class="main" id="tempDisplay">26 
+    <span class="unit">
+        <a href="#" id="celsius-temp">°C</a>
+        </span>
+    </div>
+    <h3>Precipitation: 57%
+      <br/>
+      Humidity: 80%
+      <br/>
+      Wind: 13 km/h</h3>
+    </div>
+    <hr/>
+    <div class="card-deck">
+        <div class="card">
+            <p class="card-text">Friday</p>
+          <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" class="week" alt="sunny">
+          <div class="card-body">
+            <p class="card-test">30°C</p>
+            </div>
+        </div>
+        <div class="card">
+            <p class="card-text">Saturday</p>
+          <img src="https://ssl.gstatic.com/onebox/weather/64/thunderstorms.png" class="week" alt="sunny">
+          <div class="card-body">
+            <p class="card-text">27°C</p>
+            </div>
+        </div>
+        <div class="card">
+            <p class="card-text">Sunday</p>
+          <img src="https://ssl.gstatic.com/onebox/weather/64/thunderstorms.png" class="week" alt="sunny">
+          <div class="card-body">
+            <p class="card-text">29°C</p>
+            </div>
+        </div>
+        <div class="card">
+            <p class="card-text">Monday</p>
+          <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" class="week" alt="sunny">
+          <div class="card-body">
+            <p class="card-text">26°C</p>
+            </div>
+        </div>
+        <div class="card">
+            <p class="card-text">Tuesday</p>
+          <img src="https://ssl.gstatic.com/onebox/weather/64/thunderstorms.png" class="week" alt="sunny">
+          <div class="card-body">
+            <p class="card-text">23°C</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <p>Coded by Denisa Pavlikova</p>
+    <script src="wa.js"></script>
+</body>
+</html>
